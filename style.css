@@ -6,31 +6,30 @@ body {
     margin: 0;
     padding: 0;
     color: white;
+    background-image: url('lof2.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: screen;
 }
 .container {
    width: 100%;
-   height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: rgb(167, 162, 162);
+   height: 100%;
     opacity: 0.8;
 }
 a {
     text-decoration: none;
 }
-/* .main {
-    height: 80%;
-     width: 80%;
-} */
 header {
     width: 100%;
     height: 100px;
     padding: 0;
+    margin: 0;
     background-color: rgb(22, 14, 44, 0.7);
     opacity: 80%;
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     align-items: center;
 }
 header nav {
@@ -40,6 +39,7 @@ header .logo {
     margin: 1rem;
     font-size: 24px;
     font-family: 'Merienda', cursive;
+    cursor: pointer;
 }
 header .logo .logo-below {
     font-size: 12px;
@@ -101,10 +101,7 @@ nav ul .nav-bar {
 main {
     width: 100%;
     height: 100%;
-    background-image: url('lof2.jpeg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-blend-mode: screen;
+    margin-top: 8rem;
 }
 aside {
     width: 50%;
@@ -162,10 +159,6 @@ main .end .norway {
 @media screen and (min-width: 320px) and (max-width: 559px){
     header {
     margin-top: 0;
-}
-    .main {
-    height: 100%;
-     width: 100%;
 }
     header .logo {
     margin: 1rem 2rem 0 3rem;
@@ -255,7 +248,9 @@ main .end {
 main .end .norway {
     padding: 1rem;
     margin: 2rem auto;
-    text-align: center;
+    text-align: right;
+    float: right;
+    width: 280px;
 }
 }
 @media screen and (min-width: 560px) and (max-width: 776px){
@@ -356,9 +351,11 @@ main .end {
     display: block;
 }
 main .end .norway {
+    float: right;
+    width: 280px;
     padding: 1rem;
     margin: 4rem auto;
-    text-align: center;
+    text-align: right;
 }
 }
 @media screen and (min-width: 777px) and (max-width: 993px){
@@ -386,6 +383,10 @@ nav ul .nav-bar {
     font-size: 10px;
     font-weight: lighter;
  }
+ main {
+    width: 100%;
+    height:100%;
+}
 }
 @media screen and (min-width: 994px) and (max-width: 1100px){
 header .logo {
@@ -398,5 +399,4 @@ nav ul .nav-bar {
     padding: 0 0.2rem;
     cursor: pointer;
 }
-
 }
