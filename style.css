@@ -1,0 +1,402 @@
+
+* {
+     box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+.container {
+   width: 100%;
+   height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(167, 162, 162);
+    opacity: 0.8;
+}
+a {
+    text-decoration: none;
+}
+/* .main {
+    height: 80%;
+     width: 80%;
+} */
+header {
+    width: 100%;
+    height: 100px;
+    padding: 0;
+    background-color: rgb(22, 14, 44, 0.7);
+    opacity: 80%;
+    position: relative;
+    align-items: center;
+}
+header nav {
+   display: flex;
+}
+header .logo {
+    margin: 1rem;
+    font-size: 24px;
+    font-family: 'Merienda', cursive;
+}
+header .logo .logo-below {
+    font-size: 12px;
+    margin:0 0 0 1rem;
+    padding: 0;
+}
+header nav ul {
+    display: flex;
+    list-style: none;
+    position: absolute;
+    right: 0;
+    font-family: 'Playfair Display', serif;
+}
+nav ul .nav-bar {
+    margin: 0 .6rem;
+    padding: 0 .5rem;
+    cursor: pointer;
+}
+ nav ul .nav-bar:hover {
+    background-color: gray;
+}
+ .menu {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    cursor: pointer;
+    z-index: 2000;
+    transform: scale(0);
+ }
+ .menu i {
+     font-size: 1.8rem;
+     color: white;
+ }
+ .menu .hamburger {
+    margin: .5rem auto;
+    height: 30px;
+    width: 40px;
+    display: block;
+    /* background-color: gray; */
+ }
+ .menu .close {
+    z-index: 999;
+    display: none;
+ }
+ .nav-bar .nav-item {
+     font-size: 16px;
+     font-weight: bold;
+     padding-right: 10px;
+     padding-bottom: 10px;
+     cursor: pointer;
+ } 
+  .nav-bar .nav-item:hover{
+     border-bottom: 3px solid white;
+ }
+ .nav-bar .nav-item span{
+    font-size: 12px;
+    font-weight: lighter;
+ }
+main {
+    width: 100%;
+    height: 100%;
+    background-image: url('lof2.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: screen;
+}
+aside {
+    width: 50%;
+    margin-left: 3rem;
+}
+aside h1 {
+    display: block;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 70px;
+    margin: 2rem auto;
+}
+aside p {
+    margin-bottom: 6rem;
+}
+main .end .btn {
+    border-radius: 30px;
+    border: 3px solid white;
+    width: 120px;
+    height: 40px;
+   text-align: center;
+   padding: 5px;
+}
+.end .btn:hover {
+    background-color: white;
+    opacity: 60%;
+    color: rgb(58, 57, 57);
+    font-weight: bold;
+}
+main .end {
+    margin: auto 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+main .end .norway {
+    background-color: rgb(24, 11, 59);
+    opacity: 50%;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    text-align: right;
+}
+.active.ul {
+     transform: scaleX(1);
+     transition: transform .6s;
+ }
+ .active .hamburger {
+     display: none;
+ }
+ .active .close {
+     display: block;
+ }
+
+
+/*  */
+@media screen and (min-width: 320px) and (max-width: 559px){
+    header {
+    margin-top: 0;
+}
+    .main {
+    height: 100%;
+     width: 100%;
+}
+    header .logo {
+    margin: 1rem 2rem 0 3rem;
+    font-size: 24px;
+    font-family: 'Merienda', cursive;
+    padding: 0rem;
+    cursor: pointer;
+}
+header .logo .logo-below {
+    font-size: 9px;
+}
+header nav .ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 200px;
+    height: 350px;
+    background-color: rgb(0,0,0);
+    opacity: 0.9;
+    list-style: none;
+    position: fixed;
+    margin-top: 6.5rem;
+    left: 25%;
+    font-family: 'Playfair Display', serif;
+    padding: .5rem;
+    transform: scaleX(0);
+}
+nav .ul .nav-bar {
+    margin: auto;
+    padding: auto;
+    cursor: pointer;
+    width: 120px;
+}
+.menu {
+    transform: scale(1);
+}
+.nav-bar .nav-item:hover{
+     border-bottom: 3px solid white;
+     padding-bottom: 7px;
+ } 
+ nav .ul .nav-bar:hover {
+    background-color: gray;
+}
+.nav-bar .nav-item {
+     font-size: 16px;
+     font-weight: bold;
+     padding: auto;
+     margin: .5rem auto;
+     cursor: pointer;
+ }
+ main {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 0rem;
+}
+ aside {
+    width: 86%;
+    margin-left: 3rem;
+}
+
+ aside h1 {
+    display: block;
+    font-size: 50px;
+    margin: 2rem auto;
+}
+aside p {
+    margin-bottom: 5rem;
+}
+main .end .btn {
+    border-radius: 30px;
+    border: 3px solid white;
+    width: 120px;
+    height: 40px;
+   text-align: center;
+   padding: 5px;
+}
+.end .btn:hover {
+    background-color: white;
+    opacity: 60%;
+}
+main .end {
+    margin: auto 3rem;
+    display: block;
+}
+main .end .norway {
+    padding: 1rem;
+    margin: 2rem auto;
+    text-align: center;
+}
+}
+@media screen and (min-width: 560px) and (max-width: 776px){
+.menu i {
+     font-size: 2rem;
+     color: white;
+ }
+    header {
+    margin-top: 0;
+}
+    .main {
+    height: 100%;
+     width: 100%;
+}
+    header .logo {
+    margin: 1rem 2rem 0 3rem;
+    font-size: 24px;
+    font-family: 'Merienda', cursive;
+    padding: 0rem;
+    cursor: pointer;
+}
+header .logo .logo-below {
+    font-size: 9px;
+}
+header nav .ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 250px;
+    height: 350px;
+   background-color: rgb(0,0,0);
+    opacity: 0.9;
+    list-style: none;
+     position: fixed;
+    margin-top: 6.5rem;
+    left: 30%;
+    font-family: 'Playfair Display', serif;
+    padding: .5rem;
+    transform: scaleX(0);
+}
+nav .ul .nav-bar {
+    margin: auto;
+    padding: auto;
+    cursor: pointer;
+    width: 120px;
+}
+.menu {
+    transform: scale(1);
+}
+.nav-bar .nav-item:hover{
+     border-bottom: 3px solid white;
+     padding-bottom: 7px;
+ } 
+ nav .ul .nav-bar:hover {
+    background-color: gray;
+}
+.nav-bar .nav-item {
+     font-size: 16px;
+     font-weight: bold;
+     padding: auto;
+     margin: .5rem auto;
+     cursor: pointer;
+ }
+ main {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 0rem;
+}
+ aside {
+    width: 86%;
+    margin-left: 3rem;
+}
+
+ aside h1 {
+    display: block;
+    font-size: 50px;
+    margin: 4rem auto;
+}
+aside p {
+    margin-bottom: 5rem;
+}
+main .end .btn {
+    border-radius: 30px;
+    border: 3px solid white;
+    width: 120px;
+    height: 40px;
+   text-align: center;
+   padding: 5px;
+}
+.end .btn:hover {
+    background-color: white;
+    opacity: 60%;
+}
+main .end {
+    margin: auto 3rem;
+    display: block;
+}
+main .end .norway {
+    padding: 1rem;
+    margin: 4rem auto;
+    text-align: center;
+}
+}
+@media screen and (min-width: 777px) and (max-width: 993px){
+    header .logo {
+    margin: 1rem 4rem 0 0rem;
+    font-size: 24px;
+    font-family: 'Merienda', cursive;
+}
+nav ul .nav-bar {
+    margin: 0 0.2rem;
+    padding: 0 0.2rem;
+    cursor: pointer;
+}
+.nav-bar .nav-item {
+     font-size: 14px;
+     font-weight: bold;
+     padding-right: 10px;
+     padding-bottom: 10px;
+     cursor: pointer;
+ } 
+  .nav-bar .nav-item:hover{
+     border-bottom: 3px solid white;
+ }
+ .nav-bar .nav-item span{
+    font-size: 10px;
+    font-weight: lighter;
+ }
+}
+@media screen and (min-width: 994px) and (max-width: 1100px){
+header .logo {
+    margin: 1rem 3rem 0 0rem;
+    font-size: 24px;
+    font-family: 'Merienda', cursive;
+}
+nav ul .nav-bar {
+    margin: 0 0.2rem;
+    padding: 0 0.2rem;
+    cursor: pointer;
+}
+
+}
