@@ -137,7 +137,7 @@ main .end {
     justify-content: space-between;
 }
 main .end .norway {
-    background-color: rgb(24, 11, 59);
+    background-color: rgb(34, 30, 44);
     opacity: 50%;
     padding: 1.5rem;
     margin-bottom: 2rem;
@@ -251,6 +251,7 @@ main .end .norway {
     text-align: right;
     float: right;
     width: 280px;
+    font-size: 14px;
 }
 }
 @media screen and (min-width: 560px) and (max-width: 776px){
